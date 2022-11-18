@@ -22,7 +22,7 @@ import pickle
 
 # Page title
 
-image = Image.open('images/logo.png')
+image = Image.open('logo.png')
 
 st.image(image, use_column_width= True)
 
@@ -65,17 +65,17 @@ st.header("Prediction")
 if tweet_input:
     prediction = custom_input_prediction(tweet_input)
     if prediction == "Age":
-        st.image("images/age_cyberbullying.png",use_column_width= True)
+        st.image("age_cyberbullying.png",use_column_width= True)
     elif prediction == "Ethnicity":
-        st.image("images/ethnicity_cyberbullying.png",use_column_width= True)
+        st.image("ethnicity_cyberbullying.png",use_column_width= True)
     elif prediction == "Gender":
-        st.image("images/gender_cyberbullying.png",use_column_width= True)
+        st.image("gender_cyberbullying.png",use_column_width= True)
     elif prediction == "Not Cyberbullying":
-        st.image("images/not_cyberbullying.png",use_column_width= True)
+        st.image("not_cyberbullying.png",use_column_width= True)
     elif prediction == "Other Cyberbullying":
-        st.image("images/other_cyberbullying.png",use_column_width= True)
+        st.image("other_cyberbullying.png",use_column_width= True)
     elif prediction == "Religion":
-        st.image("images/religion_cyberbullying.png",use_column_width= True)
+        st.image("religion_cyberbullying.png",use_column_width= True)
 else:
     st.write('''
     ***No Tweet Text Entered!***
